@@ -25,9 +25,9 @@ public class PyEnvironment : PythonObjectContainer,
 
     public virtual dynamic Unwrapped => GAttr<dynamic>(this.pyObject, "unwrapped");
 
-    DynamicSpace IEnvironment<object, object, object, DynamicSpace, DynamicSpace>.ActionSpace => throw new System.NotImplementedException();
+    DynamicSpace IEnvironment<object, object, object, DynamicSpace, DynamicSpace>.ActionSpace => GAttr<DynamicSpace>(this.pyObject, "action_space");
 
-    DynamicSpace IEnvironment<object, object, object, DynamicSpace, DynamicSpace>.ObservationSpace => throw new System.NotImplementedException();
+    DynamicSpace IEnvironment<object, object, object, DynamicSpace, DynamicSpace>.ObservationSpace => GAttr<DynamicSpace>(this.pyObject, "observation_space");
 
     object IEnvironment<object, object, object, DynamicSpace, DynamicSpace>.Reset() => this.Reset();
 

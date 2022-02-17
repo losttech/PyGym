@@ -37,8 +37,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Gradient.Runtime" Version="0.5.0-a1" />
-		<PackageReference Include="LostTech.NumPy" Version="0.3.0-a3" />
-		<PackageReference Include="RL" Version="0.0.1" />
+		<PackageReference Include="LostTech.NumPy" Version="0.3.0-a5" />
+		<PackageReference Include="RL" Version="0.0.2" />
 		<PackageReference Include="System.Memory" Version="4.5.4" />
 		<!-- The following is recommended for public projects -->
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />

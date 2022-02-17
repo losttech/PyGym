@@ -1,6 +1,7 @@
-﻿using numpy;
+﻿namespace PyGym;
 
-namespace PyGym;
+using numpy;
+
 public class BasicIntegration {
     [Test]
     public void WebSiteFirstSample() {
