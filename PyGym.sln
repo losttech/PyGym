@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo", "Repo", "{A7EC98AE-5D53-4AD7-AEDF-397C86456851}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyGym", "src\PyGym.csproj", "{6261BF11-EF23-49A0-89ED-9923C08727C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyGym.Tests", "test\PyGym.Tests.csproj", "{30B5270A-40DE-4EF4-8838-120BD409686A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{40C27B9A-65CC-4672-BF04-89554EC40684}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\test.yaml = .github\workflows\test.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6261BF11-EF23-49A0-89ED-9923C08727C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6261BF11-EF23-49A0-89ED-9923C08727C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6261BF11-EF23-49A0-89ED-9923C08727C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6261BF11-EF23-49A0-89ED-9923C08727C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B5270A-40DE-4EF4-8838-120BD409686A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B5270A-40DE-4EF4-8838-120BD409686A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B5270A-40DE-4EF4-8838-120BD409686A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B5270A-40DE-4EF4-8838-120BD409686A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B34204E-4B66-4D53-876E-5456DB01F822}
+	EndGlobalSection
+EndGlobal

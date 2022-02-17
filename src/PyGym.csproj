@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>LostTech.PyGym</AssemblyName>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<!--<WarningsAsErrors>NU1605</WarningsAsErrors>-->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<Authors>Lost Tech LLC</Authors>
+		<Description>.NET bindings for OpenAI Gym. Requires actual Python with Gym installed.</Description>
+		<Copyright>Lost Tech LLC</Copyright>
+		<PackageIcon>PyGym-128.png</PackageIcon>
+		<PackageProjectUrl>https://losttech.software/gradient.html</PackageProjectUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>gym;reinforcement-learning;rl;scientific;machine-learning</PackageTags>
+		<RootNamespace>PyGym</RootNamespace>
+
+		<!-- The following is recommended for public projects -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<DebugSymbols>true</DebugSymbols>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="PyGym-128.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Gradient.Runtime" Version="0.5.0-a1" />
+		<PackageReference Include="LostTech.NumPy" Version="0.3.0-a3" />
+		<PackageReference Include="RL" Version="0.0.1" />
+		<PackageReference Include="System.Memory" Version="4.5.4" />
+		<!-- The following is recommended for public projects -->
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+	</ItemGroup>
+
+</Project>
